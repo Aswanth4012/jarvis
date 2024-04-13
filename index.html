@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARWIS AI Assistant</title>
+    <!--<link href="style.css" rel="sylesheet">-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        img{
+            border: black;
+        }
+        .name p{
+            color: rgb(66, 94, 232);
+            font-size: 1.750rem;
+            margin-top: 2rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        .description p{
+            color: rgb(121, 120, 120);
+            font-size: 1.250rem;
+            margin: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            border-color: aliceblue;
+            width: auto;
+            
+        }
+        .btn{
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.750rem;
+            height: 50px;
+            width: fit-content;
+            padding: 1.250rem;
+            font-size: 0.750rem;
+            margin-top: 2rem;
+            background-color: rgb(152, 204, 244);
+        }
+        .btn:hover{
+            background-color: rgb(77, 76, 76);
+        }
+        .fa-microphone{
+            font-size: 1.2rem;
+        }
+        section{
+            height: 100vh;
+        }
+        .dev{
+            position: absolute;
+            
+            width: 100%;
+            
+            color: white;
+            bottom: 0;
+            align-items: center;
+            text-align: center;
+            gap: 1em;
+        }
+        @media (max-width:1024px){
+            .container{
+                padding-top: 30px;
+                padding-left: px;
+                padding-right: px;
+            }
+            .btn{
+                
+                height: 20px;
+                font-size: 10px;
+            }
+            .description p{
+                font-size: 15px;
+            }
+            .dev h4{
+                font-size: 10px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+    <div class="container">
+        <div class="img-container">
+            <img src="Images/ironman.gif" alt="" class="jarvis" style="height: 200px;width: auto;">
+        </div>
+        <div class="name">
+            <p>J A R V I S</p>
+        </div>
+        <div class="description">
+            <p>"I am JARVIS your AI Assistant"</p>
+        </div>
+        <div class="click-to-speak">
+            <button class="btn">
+            <i class="fa-solid fa-microphone"></i>
+            <h2 class="content">Click to speak..</h2>
+            </button>
+        </div>
+    </div>
+    <footer class="dev">
+        <h4 class="links">&copy; 2024 All rights received || <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a></h4>
+    </footer>
+    </section>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/11998b0979.js" crossorigin="anonymous"></script>
+</body>
+</html>
